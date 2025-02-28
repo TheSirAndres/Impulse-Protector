@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cotizador de Seguros de Automóviles</title>
+</head>
+<body>
+    <header>
+        <div class="logo_container">
+            <img src="sources/icons/purple_transparent_thunder.png" class="logo_img">
+            <div class="logo">Impulse Protector</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services"><img src="sources/icons/medical_services_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+                <li><a href="#about"><img src="sources/icons/badge_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+                <li><a href="#contact"><img src="sources/icons/contact_support_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+                <li>
+                    <div class="menu">
+                        <img src="sources/icons/login_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="login-img">
+                        <div id="loginMenu" class="dropdown">
+                            <!-- Contenido del menú de inicio de sesión -->
+                        </div>
+                        <img src="sources/icons/account_circle_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="loged-img hide">
+                        <div id="profileMenu" class="dropdown">
+                            <!-- Contenido del menú de usuario autenticado -->
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-insurance-container">
+                <h1>Protege tu coche mientras proteges tu billetera</h1>
+                <div class="insurance-calculator">
+                    <h2>Calcula el Precio de tu Seguro</h2>
+                    <form id="insurance-form">
+                        <div class="form-group">
+                            <label for="marca">Selecciona la Marca:</label>
+                            <select id="marca" name="marca" onchange="mostrarModelos()">
+                            <option value="">Elige una marca</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="ford">Ford</option>
+                            <option value="honda">Honda</option>
+                            <option value="chevrolet">Chevrolet</option>
+                            <option value="nissan">Nissan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="modelo">Selecciona el Modelo:</label>
+                            <select id="modelo" name="modelo" disabled>
+                            <option value="">Elige un modelo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Año:</label>
+                            <select id="year" name="year">
+
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="coverage">Tipo de Seguro:</label>
+                            <select id="coverage" name="coverage" required>
+                                <option value="basic">Básico</option>
+                                <option value="normal">Normal</option>
+                                <option value="full">Completo</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-quote">Cotizar</button>
+                    </form>
+                </div>
+            </div>
+            <img src="sources/ilustrations/drawkit-transport-scene-11.svg" alt="Fondo Hero" class="hero-image" id="heroImage" />
+        </section>
+        <section class="stats">
+            <div class="stat-item">300,000+<br>Personas confiaron en nosotros</div>
+            <div class="stat-item">98%<br>Clientes satisfechos</div>
+            <div class="stat-item">$12 millones<br>Reembolsados desde 2019</div>
+            <div class="stat-item">100%<br>Clientes retornados</div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="sources/icons/facebook-logo.png" alt=""></a>
+            <a href="#"><img src="sources/icons/instagram-logo.png" alt=""></a>
+            <a href="#"><img src="sources/icons/twitter-logo.png" alt=""></a>
+            <a href="#"><img src="sources/icons/youtube-logo.png" alt=""></a>
+        </div>
+        <p>&copy; 2025 Impulsa Academy. Todos los derechos reservados.</p>
+        <div class="contact-footer">
+            <h3>Contacto</h3>
+            <p>Email: info@impulsaacademy.com</p>
+            <p>Teléfono: +506 6165 1780</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
