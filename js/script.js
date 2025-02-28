@@ -22,8 +22,8 @@ function changeImage() {
 changeImage(); // Inicia el ciclo
 
 function mostrarModelos() {
-    const marca = document.getElementById('marca').value;
-    const modeloSelect = document.getElementById('modelo');
+    const marca = document.getElementById('brand').value;
+    const modeloSelect = document.getElementById('model');
     modeloSelect.innerHTML = ''; // Limpiar modelos previos
     modeloSelect.disabled = false;
 

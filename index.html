@@ -40,9 +40,9 @@
                     <h2>Calcula el Precio de tu Seguro</h2>
                     <form id="insurance-form">
                         <div class="form-group">
-                            <label for="marca">Selecciona la Marca:</label>
-                            <select id="marca" name="marca" onchange="mostrarModelos()">
-                            <option value="">Elige una marca</option>
+                            <label for="brand">Selecciona la Marca:</label>
+                            <select id="brand" name="brand" onchange="mostrarModelos()">
+                            <option value=" ">Elige una marca</option>
                             <option value="toyota">Toyota</option>
                             <option value="ford">Ford</option>
                             <option value="honda">Honda</option>
@@ -51,9 +51,9 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="modelo">Selecciona el Modelo:</label>
-                            <select id="modelo" name="modelo" disabled>
-                            <option value="">Elige un modelo</option>
+                            <label for="model">Selecciona el Modelo:</label>
+                            <select id="model" name="model" disabled>
+                            <option value=" ">Elige un modelo</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -70,6 +70,7 @@
                                 <option value="full">Completo</option>
                             </select>
                         </div>
+                        <div class="custom-loader"></div>
                         <button type="submit" class="btn-quote">Cotizar</button>
                     </form>
                 </div>

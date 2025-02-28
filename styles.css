@@ -8,6 +8,7 @@
     --green: #9AFF9C;
     --blue: #9AFFFF;
     --red: #ff5448;
+    --red_hover: #c03f36;
 }
 * {
     margin: 0;
@@ -137,7 +138,7 @@ insurance-calculator {
 }
 
 .btn-quote {
-    background-color: #ff6200ea; /* Color del botón */
+    background-color: var(--red); /* Color del botón */
     color: #fff; /* Texto blanco en el botón */
     padding: 15px 20px;
     border: none;
@@ -148,7 +149,7 @@ insurance-calculator {
 }
 
 .btn-quote:hover {
-    background-color: #e05200; /* Color al pasar el mouse */
+    background-color: var(--red_hover); /* Color al pasar el mouse */
 }
 .hero-image {
     width: 50%; /* Permite que la imagen mantenga su relación de aspecto */
@@ -176,6 +177,60 @@ footer {
     padding: 20px;
     text-align: center;
   }
+.error{
+    background-color: rgba(255, 0, 0, 0.1);  /* Fondo rojo con transparencia */
+    border: 2px solid var(--red);  /* Borde rojo */
+    color: var(--red);  /* Texto rojo */
+    padding: 10px;  /* Espaciado interno */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Texto centrado */
+    font-family: Arial, sans-serif; /* Tipografía */
+    margin: 20px 0; /* Margen superior e inferior */
+    font-size: 16px; /* Tamaño de texto */
+    animation: opacity 3s ease;
+}
+@keyframes opacity {
+    0% {
+        opacity: 0; /* Comienza invisible */
+        transform: translateY(-20px); /* Se mueve hacia arriba */
+    }
+    50% {
+        opacity: 1; /* Se vuelve completamente visible */
+        transform: translateY(0); /* Regresa a su posición original */
+    }
+    100% {
+        opacity: 0; /* Se desvanece nuevamente */
+        transform: translateY(20px); /* Se mueve hacia abajo */
+    }
+}
+.correct{
+    background-color: rgba(0, 255, 76, 0.1);  /* Fondo rojo con transparencia */
+    border: 2px solid var(--green);  /* Borde rojo */
+    color: var(--white);  /* Texto rojo */
+    padding: 10px;  /* Espaciado interno */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Texto centrado */
+    font-family: Arial, sans-serif; /* Tipografía */
+    margin: 20px 0; /* Margen superior e inferior */
+    font-size: 16px; /* Tamaño de texto */
+}
+.custom-loader {
+    display: none;
+    margin: 20px auto;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:8px solid;
+    border-color:#E4E4ED;
+    border-right-color: #FF5448;
+    animation:s2 1s infinite linear;
+  }
+  @keyframes s2 {to{transform: rotate(1turn)}}
+.show{
+    display: block;
+}
 @media (max-width: 700px) {
     #heroImage{
         width: 0px;
