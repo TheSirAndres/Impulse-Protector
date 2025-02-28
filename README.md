@@ -1,5 +1,6 @@
-```markdown
-# Impulse Protector 🚗💡
+
+# Impulse Protector (Portfolio Project) 🚗💡
+![Project Banner](sources/icons/purple_transparent_thunder.png)
 
 > [!important]  
 > **Impulse Protector** is an online vehicle insurance quote generator, developed as a practice project under the fictional corporation **Impulse**.  
@@ -35,19 +36,18 @@
 ---
 
 ## Project Structure 📂
-```plaintext
+
 impulse-protector/
 ├── index.html          # Main quote generator page
-├── styles/
-│   └── main.css        # Global and responsive styles
+├── main.css            # Global and responsive styles
 ├── scripts/
-│   ├── calculator.js   # Quote logic (prototypes/objects)
-│   ├── data.js         # Brand, model, and year data
-│   └── ui.js           # DOM manipulation and events
-└── assets/             # Images and icons
-```
+│   ├── app.js          # Quote logic (prototypes/objects)
+│   └── script.js       # website funtionalities
+│  
+└── sources/             # Images and icons
 
----
+
+
 
 ## Installation & Usage 🚀
 1. **Clone the repository**:
@@ -87,11 +87,11 @@ Suggestions welcome! To contribute:
 ## License 📄
 Open-source under the **MIT License**.  
 Built with 🧠 by [Your Name] for **Impulse** (fictional corporation).
-```
+
 🚀 **Impulse Protector**  
 🌐 Fictional project part of **Impulse Corporation** portfolio  
 📧 contact@impulse-learning.dev (placeholder)  
 🔗 ([Live Preview](https://impulseprotector.netlify.app/)) <!-- Update URL -->
-```
+
 
 This README uses markdown callouts (`> [!type]`) for emphasis and follows best practices for documentation. Fully English, fully markdown! 🎉
