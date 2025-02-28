@@ -36,7 +36,7 @@
 ---
 
 ## Project Structure 📂
-
+```markdown
 impulse-protector/
 ├── index.html          # Main quote generator page
 ├── main.css            # Global and responsive styles
@@ -46,6 +46,7 @@ impulse-protector/
 │  
 └── sources/             # Images and icons
 
+```
 
 
 
@@ -65,10 +66,7 @@ impulse-protector/
 ## How the Quote Generator Works 🔍
 1. **Select Brand**: Model options update automatically.
 2. **Choose Year**: Only the last 20 years are shown (calculated from the current year).
-3. **Insurance Type**:
-   - **Basic**: Standard coverage (3% of the vehicle's base value).
-   - **Premium**: Extended coverage (5%).
-   - **Full**: Total coverage + roadside assistance (8%).
+3. **Insurance Type**: 3 different insurance types that will calculate the price
 4. **Calculate**: Price updates instantly.
 
 > [!warning]  
@@ -86,7 +84,7 @@ Suggestions welcome! To contribute:
 
 ## License 📄
 Open-source under the **MIT License**.  
-Built with 🧠 by [Your Name] for **Impulse** (fictional corporation).
+Built with 🧠 by [Andres Alpizar] for **Impulse** (fictional corporation).
 
 🚀 **Impulse Protector**  
 🌐 Fictional project part of **Impulse Corporation** portfolio  
