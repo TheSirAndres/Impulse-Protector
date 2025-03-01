@@ -238,4 +238,11 @@ footer {
     .hero h1 {
         font-size: 30px;
     }
+
+}
+
+@media (max-height:806px) {
+    .hero{
+        height: 80vh;
+    }
 }
